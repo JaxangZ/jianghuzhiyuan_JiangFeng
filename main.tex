@@ -1,0 +1,80 @@
+\documentclass[a4paper]{ctexart}
+%\usepackage{ctex}
+%跳转链接红框显示选项（下面两行二选一）
+\usepackage[hidelinks]{hyperref}
+%\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{listings}
+\lstset{language = Matlab}
+\usepackage[numbered, autolinebreaks, useliterate]{mcode}
+%[framed, numbered, autolinebreaks, useliterate]
+\usepackage[a4paper, left = 10mm, right = 10mm, top = 15mm, bottom = 15mm]{geometry}
+\usepackage{amsmath, amsfonts, amsthm, amssymb}
+\theoremstyle{definition}
+\newtheorem{thm}{Theorem}
+\newtheorem{exmp}{Example}
+\newtheorem{defn}{Definition}
+\newtheorem{lema}{Lemma}
+\newtheorem{prop}{Proposition}
+\newtheorem{coro}{Corollary}
+\renewcommand{\baselinestretch}{1.25}
+%------------setlength----------------%
+\setlength{\textwidth}{162mm}
+\setlength{\textheight}{190mm}
+\setlength{\textheight}{231mm}
+\setlength{\headheight}{-0.1cm}
+\setlength{\topmargin}{-0.1cm}
+\setlength{\oddsidemargin}{-0cm}
+\setlength{\evensidemargin}{-0cm}
+\setlength{\parskip}{1mm}
+\setlength{\unitlength}{1mm}
+\setlength{\parindent}{2em}
+%下方使得章节标题计入目录同时不显示序号
+\makeatletter
+\newcommand\specialsectioning{\setcounter{secnumdepth}{-2}}
+\makeatother
+%去掉页眉，并页码居中于页脚
+%\pagestyle{plain}
+
+
+\title{\Huge 江湖之远}
+\author{蒋峰\\ 
+        2017.8至2019.1连载于《萌芽》\\
+       }
+\date{}
+
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\newpage
+
+\setcounter{page}{1}
+\tableofcontents
+\newpage
+
+\specialsectioning
+\input{chapters/chapter1.tex}
+\input{chapters/chapter2.tex}
+\input{chapters/chapter3.tex}
+\input{chapters/chapter4.tex}
+\input{chapters/chapter5.tex}
+\input{chapters/chapter6.tex}
+\input{chapters/chapter7.tex}
+\input{chapters/chapter8.tex}
+\input{chapters/chapter9.tex}
+\input{chapters/chapter10.tex}
+\input{chapters/chapter11.tex}
+\input{chapters/chapter12.tex}
+\input{chapters/chapter13.tex}
+\input{chapters/chapter14.tex}
+\input{chapters/chapter15.tex}
+\input{chapters/chapter16.tex}
+\input{chapters/chapter17.tex}
+\input{chapters/chapter18.tex}
+
+
+\end{document}
